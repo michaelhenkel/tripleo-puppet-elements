@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -eux
+
+CONTRAIL_REPOS_FILE=contrail
+
+CONTRAIL_REPOS_DIR=$TMP_MOUNT_PATH/etc/yum.repos.d
+CONTRAIL_TARGET_FILE_NAME=contrail.repo
+
+sudo mkdir -p $CONTRAIL_REPOS_DIR
+
+sudo cp $TMP_HOOKS_PATH/extra-data.d/$CONTRAIL_REPOS_FILE $CONTRAIL_REPOS_DIR/$CONTRAIL_TARGET_FILE_NAME

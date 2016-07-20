@@ -1,0 +1,5 @@
+[contrail]
+name=Contrail
+baseurl=http://192.168.122.1/contrail
+enabled=1
+gpgcheck=0
